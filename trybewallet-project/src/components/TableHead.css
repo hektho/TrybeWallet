@@ -1,0 +1,22 @@
+.table-head {
+    display: flex;
+    width: 99vw;
+    justify-content: center;
+}
+
+td, th {
+    flex-basis: 100%;
+    margin: 0%;
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+}
+
+.claro {
+    background-color: rgba(0, 255, 0, 0.308);
+}
+
+.escuro {
+    background-color: rgba(0, 94, 0, 0.356);
+}
