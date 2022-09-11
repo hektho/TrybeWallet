@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { emailAction } from '../actions';
+import './Login.css';
+import carteiraImg from '../imagens/carteira.png';
 
 class Login extends Component {
   constructor() {
@@ -35,14 +37,16 @@ class Login extends Component {
   render() {
     const { disabled } = this.state;
     return (
-      <section>
-        <label htmlFor='email'> E-mail:
-            <input type='text' name='email' onChange={ this.handleChange } id='email'/>
+      <section className='login-container'>
+        <img src={ carteiraImg } alt='Imagem de uma carteira' width='100px' />
+        <h1> TrybeWallet </h1>
+        <label className='label-container' htmlFor='email'> E-mail:
+            <input autoComplete='off' className='login-input' type='text' name='email' onChange={ this.handleChange } id='email'/>
         </label>
-        <label htmlFor='senha'> Senha:
-            <input type='password' name='senha' onChange={ this.handleChange } id='senha'/>
+        <label className='label-container' htmlFor='senha'> Senha:
+            <input autoComplete='off' className='login-input' type='password' name='senha' onChange={ this.handleChange } id='senha'/>
         </label>
-        <button type='button' onClick={ this.buttonClick } disabled={ disabled } >
+        <button className='button-login' type='button' onClick={ this.buttonClick } disabled={ disabled } >
             Entrar
         </button>
       </section>
