@@ -48,8 +48,12 @@ export default class extends Component {
                 BRL/Real
               </td>
               <td className='cell-body claro'>
-                <input type='button' value='Editar' id={i.id} onClick={ editaDespesa } />
-                <input type='button' value='Excluir' id={i.id} onClick={ excluiDespesa } />
+                <input type='button' value='Editar' id={i.id} className='edit' 
+                  onClick={ editaDespesa } 
+                />
+                <input className='exclui' type='button' value='Excluir' id={i.id} 
+                  onClick={ excluiDespesa } 
+                />
               </td>
             </tr>
           ))}

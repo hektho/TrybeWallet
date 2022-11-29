@@ -1,6 +1,23 @@
 .forms-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.inputs {
+    width: 100px;
+    padding: 5px;
+}
+
+#valor {
+    width: 40px;
+}
+
+#categories {
+    width: 110px;
+}
+
+button {
+    cursor: pointer;
 }

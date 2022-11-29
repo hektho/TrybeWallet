@@ -31,7 +31,8 @@ class Forms extends Component {
             type='number' 
             id='valor' 
             name='valor' 
-            onChange={ handleInputsChange } 
+            onChange={ handleInputsChange }
+            className='inputs'
           />
         </label>
         <label htmlFor='moeda'> Moeda:
@@ -40,6 +41,7 @@ class Forms extends Component {
             id='moeda' 
             name='moeda' 
             onChange={ handleInputsChange }
+            className='inputs'
           >
             {currencies.map((i) => <option key={ i }> {i} </option>)}
           </select>
@@ -50,16 +52,18 @@ class Forms extends Component {
             id='metodos' 
             name='metodo' 
             onChange={ handleInputsChange }
+            className='inputs'
           >
             {paymentsWay.map((i) => <option key={ i }> {i} </option>)}
           </select>
         </label>
-        <label htmlFor='categories'>
+        <label htmlFor='categories'> Categoria:
           <select
             value={ categoria }
             id='categories' 
             name='categoria' 
             onChange={ handleInputsChange }
+            className='inputs'
           >
             {categories.map((i) => <option key={ i }> { i } </option>)}
           </select>
@@ -72,6 +76,7 @@ class Forms extends Component {
             name='descricao' 
             onChange={ handleInputsChange }
             autoComplete='off'
+            className='inputs'
           />
         </label>
         <button type='button' onClick={ saveExpenses } disabled={ saveButton }>

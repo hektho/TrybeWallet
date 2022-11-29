@@ -20,3 +20,31 @@ td, th {
 .escuro {
     background-color: rgba(0, 94, 0, 0.356);
 }
+
+.edit {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.exclui {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.exclui:hover {
+    background-color: rgb(126, 0, 0);
+}
+
+.edit:hover {
+    background-color: rgb(0, 82, 0);
+}
